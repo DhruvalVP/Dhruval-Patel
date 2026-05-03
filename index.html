@@ -195,7 +195,23 @@ nav {
 }
 .nav-links a:hover { color: var(--orange); }
 
-.nav-right { display: flex; align-items: center; gap: 1rem; }
+.nav-right { display: flex; align-items: center; gap: 1.2rem; }
+
+.theme-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.theme-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  user-select: none;
+}
 
 .theme-toggle {
   width: 52px; height: 28px;
@@ -765,6 +781,8 @@ footer span { color: var(--orange); }
   .projects-grid { grid-template-columns: 1fr; }
   .edu-card { flex-direction: column; gap: 1rem; }
   section { padding: 3.5rem 1.2rem; }
+
+  .theme-label { display: none; } /* Hide label on mobile to save space */
 }
 
 @media (max-width: 480px) {
@@ -797,10 +815,13 @@ footer span { color: var(--orange); }
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-right">
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span class="theme-icon sun">☀</span>
-        <span class="theme-icon moon">☽</span>
-      </button>
+      <div class="theme-wrapper" id="themeWrapper">
+        <span class="theme-label">Theme</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">☽</span>
+        </button>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -823,7 +844,7 @@ footer span { color: var(--orange); }
         </div>
         <p class="hero-tagline">Building intelligent systems that bridge the gap between cutting-edge AI research and real-world impact.</p>
         <div class="hero-cta">
-          <a href="assets/resume.pdf" download="Dhruval_Patel_assets/resume.pdf" class="btn btn-primary">
+          <a href="assets/dhruval_patel_resume.pdf" download="Dhruval_Patel_Resume.pdf" class="btn btn-primary">
             <i class="fa fa-download"></i> Download Resume
           </a>
           <a href="#projects" class="btn btn-secondary">
@@ -863,7 +884,6 @@ footer span { color: var(--orange); }
             <i class="fab fa-youtube"></i> Know Me Better: A Quick Intro!
           </h3>
           <div class="video-frame-wrap">
-            <!-- Note: Replace the ID 'dQw4w9WgXcQ' with your actual YouTube video ID -->
             <iframe 
               src="https://www.youtube.com/embed/Mm0N4g08AaM?si=N7qoqg8XYB1NyM92" 
               title="Dhruval Patel Introduction Video"
@@ -1072,17 +1092,38 @@ footer span { color: var(--orange); }
 </footer>
 
 <script>
-// Theme
+// Theme Management
 const html = document.documentElement;
-const toggle = document.getElementById('themeToggle');
-const saved = localStorage.getItem('theme') || 'dark';
-html.setAttribute('data-theme', saved);
+const themeToggle = document.getElementById('themeToggle');
+const themeWrapper = document.getElementById('themeWrapper');
 
-toggle.addEventListener('click', () => {
+/**
+ * Determines the initial theme based on local storage or system preference.
+ */
+function getInitialTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    return savedTheme;
+  }
+  // Detect system preference
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+}
+
+// Apply initial theme
+const initialTheme = getInitialTheme();
+html.setAttribute('data-theme', initialTheme);
+
+// Toggle Theme Handler
+const toggleTheme = () => {
   const current = html.getAttribute('data-theme');
   const next = current === 'dark' ? 'light' : 'dark';
   html.setAttribute('data-theme', next);
   localStorage.setItem('theme', next);
+};
+
+themeToggle.addEventListener('click', toggleTheme);
+themeWrapper.addEventListener('click', (e) => {
+  if (e.target !== themeToggle) toggleTheme();
 });
 
 // Scroll animations
