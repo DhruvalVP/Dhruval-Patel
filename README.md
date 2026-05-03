@@ -63,17 +63,6 @@ I engineer intelligent systems that bridge the gap between cutting-edge AI resea
 
 ---
 
-### 📊 GitHub Analytics
-
-<div align="center">
-  <a href="https://github.com/DhruvalVP">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=DhruvalVP&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0A0A0C&title_color=FF6B00&text_color=8A8795&icon_color=FF8C00" />
-  </a>
-  <a href="https://github.com/DhruvalVP">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DhruvalVP&layout=compact&theme=tokyonight&hide_border=true&bg_color=0A0A0C&title_color=FF6B00&text_color=8A8795" />
-  </a>
-</div>
-
 <br>
 
 <div align="center">
