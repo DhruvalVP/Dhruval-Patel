@@ -14,21 +14,27 @@
 <meta name="keywords" content="Dhruval Patel, Generative AI Developer, Backend Developer, Python Developer, FastAPI, RAG, Agentic AI, Anand, Gujarat, Portfolio">
 <meta name="author" content="Dhruval Patel">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://github.com/DhruvalVP">
+<link rel="canonical" href="https://dhruvalvp.github.io/Dhruval-Patel">
+
+<!-- Google Search Image/Thumbnail Signals -->
+<meta name="thumbnail" content="https://dhruvalvp.github.io/Dhruval-Patel/assets/Dhruval_Patel.jpeg">
+<link rel="image_src" href="https://dhruvalvp.github.io/Dhruval-Patel/assets/Dhruval_Patel.jpeg">
 
 <!-- Open Graph / LinkedIn / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://github.com/DhruvalVP">
+<meta property="og:url" content="https://dhruvalvp.github.io/Dhruval-Patel">
 <meta property="og:title" content="Dhruval Patel | Generative AI & Backend Developer">
 <meta property="og:description" content="Building intelligent systems bridging the gap between cutting-edge AI research and real-world impact.">
-<meta property="og:image" content="https://github.com/DhruvalVP/assets/Dhruval_Patel.jpeg">
+<meta property="og:image" content="https://dhruvalvp.github.io/Dhruval-Patel/assets/Dhruval_Patel.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://github.com/DhruvalVP">
+<meta name="twitter:url" content="https://dhruvalvp.github.io/Dhruval-Patel">
 <meta name="twitter:title" content="Dhruval Patel | Generative AI & Backend Developer">
 <meta name="twitter:description" content="Building intelligent systems bridging the gap between cutting-edge AI research and real-world impact.">
-<meta name="twitter:image" content="https://github.com/DhruvalVP/assets/Dhruval_Patel.jpeg">
+<meta name="twitter:image" content="https://dhruvalvp.github.io/Dhruval-Patel/assets/Dhruval_Patel.jpeg">
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -37,8 +43,13 @@
   "@type": "Person",
   "name": "Dhruval Patel",
   "jobTitle": "Generative AI & Backend Developer",
-  "url": "https://github.com/DhruvalVP",
-  "image": "https://github.com/DhruvalVP/assets/Dhruval_Patel.jpeg",
+  "url": "https://dhruvalvp.github.io/Dhruval-Patel",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://dhruvalvp.github.io/Dhruval-Patel/assets/Dhruval_Patel.jpeg",
+    "width": "1024",
+    "height": "1024"
+  },
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Anand",
@@ -233,9 +244,19 @@ nav {
   box-shadow: 0 0 8px var(--orange-glow);
 }
 [data-theme="light"] .theme-toggle::after { transform: translateX(24px); }
-.theme-icon { font-size: 0.75rem; position: absolute; top: 50%; transform: translateY(-50%); }
-.theme-icon.sun { right: 7px; }
-.theme-icon.moon { left: 7px; }
+
+.theme-icon { 
+  font-size: 0.75rem; 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  transition: color var(--transition);
+}
+.theme-icon.sun { right: 7px; color: #FFFFFF; } /* Specifically set to white for dark mode visibility */
+.theme-icon.moon { left: 7px; color: var(--text-muted); }
+
+[data-theme="light"] .theme-icon.sun { color: var(--text-muted); }
+[data-theme="light"] .theme-icon.moon { color: var(--text-muted); }
 
 /* HERO */
 #hero {
@@ -1121,9 +1142,12 @@ const toggleTheme = () => {
   localStorage.setItem('theme', next);
 };
 
-themeToggle.addEventListener('click', toggleTheme);
-themeWrapper.addEventListener('click', (e) => {
-  if (e.target !== themeToggle) toggleTheme();
+themeToggle.addEventListener('click', (e) => {
+  e.stopPropagation(); // Prevent duplicate trigger from wrapper
+  toggleTheme();
+});
+themeWrapper.addEventListener('click', () => {
+  toggleTheme();
 });
 
 // Scroll animations
