@@ -3,7 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhruval Patel — Portfolio</title>
+
+<!-- Basic SEO -->
+<title>Dhruval Patel | Generative AI & Backend Developer</title>
+<meta name="description" content="Portfolio of Dhruval Patel, a Generative AI and Backend Developer based in Anand, Gujarat. Specializing in Python, FastAPI, RAG systems, and Agentic AI workflows.">
+<meta name="keywords" content="Dhruval Patel, Generative AI Developer, Backend Developer, Python Developer, FastAPI, RAG, Agentic AI, Anand, Gujarat, Portfolio">
+<meta name="author" content="Dhruval Patel">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com"> <!-- Replace with your actual domain -->
+
+<!-- Open Graph / LinkedIn / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:title" content="Dhruval Patel | Generative AI & Backend Developer">
+<meta property="og:description" content="Building intelligent systems bridging the gap between cutting-edge AI research and real-world impact.">
+<meta property="og:image" content="https://yourdomain.com/profile.jpeg"> <!-- Replace with absolute URL to your image -->
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://yourdomain.com">
+<meta name="twitter:title" content="Dhruval Patel | Generative AI & Backend Developer">
+<meta name="twitter:description" content="Building intelligent systems bridging the gap between cutting-edge AI research and real-world impact.">
+<meta name="twitter:image" content="https://yourdomain.com/profile.jpeg">
+
+<!-- Structured Data (JSON-LD) for Rich Results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dhruval Patel",
+  "jobTitle": "Generative AI & Backend Developer",
+  "url": "https://yourdomain.com",
+  "image": "https://yourdomain.com/profile.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Anand",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/dhruval-patel-dev",
+    "https://github.com/DhruvalVP",
+    "https://www.youtube.com/@dhruvalcodes"
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -482,7 +527,7 @@ section { padding: 5rem 2rem; }
 }
 .timeline-role {
   font-family: var(--font-display);
-  font-size: 1.15rem; font-weight: 700;
+  font-size: 1.2rem; font-weight: 700;
   margin-bottom: 0.2rem;
   letter-spacing: -0.01em;
 }
@@ -700,268 +745,272 @@ footer span { color: var(--orange); }
   <div class="cursor-glow" id="cursorGlow"></div>
 </div>
 
-<!-- NAV -->
-<nav>
-  <a href="#hero" class="nav-logo">DP<span>.</span></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-      <span class="theme-icon sun">☀</span>
-      <span class="theme-icon moon">☽</span>
-    </button>
-    <button class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+<header>
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">DP<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon sun">☀</span>
+        <span class="theme-icon moon">☽</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <div class="hero-label">👋 Available for Opportunities</div>
-      <h1 class="hero-name">Dhruval<br><span class="accent">Patel</span></h1>
-      <div class="hero-title">
-        <span class="dynamic-text active">Generative AI Developer</span>
-        <span class="dynamic-text">Agentic AI Developer</span>
-        <span class="dynamic-text">Backend Developer</span>
-        <span class="dynamic-text">Python Developer</span>
-      </div>
-      <p class="hero-tagline">Building intelligent systems that bridge the gap between cutting-edge AI research and real-world impact.</p>
-      <div class="hero-cta">
-        <a href="resume.pdf" download="Dhruval_Patel_Resume.pdf" class="btn btn-primary" id="downloadBtn">
+<main>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-label">👋 Available for Opportunities</div>
+        <h1 class="hero-name">Dhruval<br><span class="accent">Patel</span></h1>
+        <div class="hero-title">
+          <span class="dynamic-text active">Generative AI Developer</span>
+          <span class="dynamic-text">Agentic AI Developer</span>
+          <span class="dynamic-text">Backend Developer</span>
+          <span class="dynamic-text">Python Developer</span>
+        </div>
+        <p class="hero-tagline">Building intelligent systems that bridge the gap between cutting-edge AI research and real-world impact.</p>
+        <div class="hero-cta">
+          <a href="resume.pdf" download="Dhruval_Patel_Resume.pdf" class="btn btn-primary">
             <i class="fa fa-download"></i> Download Resume
-        </a>
-        <a href="#projects" class="btn btn-secondary">
-          <i class="fa fa-code"></i> View Projects
-        </a>
-      </div>
-    </div>
-    <div class="hero-photo-wrap">
-      <div class="photo-ring">
-        <div class="ring-decor r1"></div>
-        <div class="ring-decor r2"></div>
-        <div class="photo-inner">
-          <img src="profile.jpeg" alt="Dhruval Patel">
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <i class="fa fa-code"></i> View Projects
+          </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner">
-    <div class="section-label">Who I Am</div>
-    <h2 class="section-title">Professional Summary</h2>
-    <div class="glass-card fade-in">
-      <p>
-        I'm a <strong>Generative AI</strong> and <strong>backend developer</strong>, with hands-on experience in building RAG-based systems, AI assistants, and Agentic AI workflows. Skilled in developing real-world AI applications using <strong>Python and FastAPI</strong>, with a focus on performance optimization and automation. I believe in crafting systems that are not just technically sound, but genuinely transformative.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-inner">
-    <div class="section-label">What I Know</div>
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="glass-card skill-category fade-in">
-        <h3><i class="fa fa-code" style="color:var(--orange);margin-right:0.5rem"></i> Programming Languages</h3>
-        <div class="skill-chips">
-          <span class="chip">Python</span>
-          <span class="chip">C#</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">C/C++</span>
-        </div>
-      </div>
-      <div class="glass-card skill-category fade-in">
-        <h3><i class="fa fa-brain" style="color:var(--orange);margin-right:0.5rem"></i> AI/ML & LLMs</h3>
-        <div class="skill-chips">
-          <span class="chip">Generative AI</span>
-          <span class="chip">Agentic AI</span>
-          <span class="chip">RAG</span>
-          <span class="chip">Finetuning</span>
-          <span class="chip">Embeddings</span>
-          <span class="chip">MCP</span>
-        </div>
-      </div>
-      <div class="glass-card skill-category fade-in">
-        <h3><i class="fa fa-layer-group" style="color:var(--orange);margin-right:0.5rem"></i> Frameworks & Tools</h3>
-        <div class="skill-chips">
-          <span class="chip">LangChain</span>
-          <span class="chip">FastAPI</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">n8n</span>
-          <span class="chip">Ollama</span>
-          <span class="chip">OpenAI</span>
-          <span class="chip">Vosk</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-inner">
-    <div class="section-label">What I've Built</div>
-    <h2 class="section-title">Technical Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card fade-in">
-        <div class="project-title">🎙️ Ultimate AI Voice Assistant</div>
-        <ul>
-          <li>Deployed a hybrid OpenAI/Ollama LLM architecture with Google &amp; Vosk speech recognition, cutting cloud latency to under 1s while securing 100% of offline data via JSON</li>
-          <li>Programmed hot-word detection and OS-level integrations to automate commands, eliminating 65% of manual OS navigation with up to 95% transcription accuracy</li>
-        </ul>
-      </div>
-      <div class="project-card fade-in">
-        <div class="project-title">💼 AI Powered Job Preparation Platform</div>
-        <ul>
-          <li>Engineered a Python/React.js/FastAPI career accelerator overhauling standard LMS architectures with AI assessments and personalized learning roadmaps</li>
-          <li>Automated skill evaluations achieving 90% accuracy in targeted skill improvement tracking</li>
-        </ul>
-      </div>
-      <div class="project-card fade-in">
-        <div class="project-title">📄 PDF Translator</div>
-        <ul>
-          <li>Developed a chunk-processing translation engine using ai4bharat/indictrans2-en-indic-1B model with structural parsing algorithms</li>
-          <li>Achieved 95% translation accuracy and 98% formatting accuracy, eliminating 100% of manual post-translation reformatting for large PDFs</li>
-        </ul>
-      </div>
-      <div class="project-card fade-in">
-        <div class="project-title">🧠 Smart Meeting Notes (SaaS Platform)</div>
-        <ul>
-          <li>Launched a GenAI SaaS platform translating live conversations into structured insights with automated summaries</li>
-          <li>Reduced post-meeting administrative overhead by 100% through real-time AI-powered transcription and action item extraction</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-inner">
-    <div class="section-label">What I've Done</div>
-    <h2 class="section-title">Experience &amp; Leadership</h2>
-    <div class="glass-card fade-in">
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-role">Google Student Ambassador — MBIT</div>
-          <div class="timeline-meta">2025 – 2026</div>
-          <div class="timeline-desc">Led a Gemini orientation for 160+ students covering advanced features (Pro, Nano Banana 2, Veo), securing 1-year free subscriptions to drive campus-wide AI adoption.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-role">Training &amp; Placement Coordinator — MBIT</div>
-          <div class="timeline-meta">2025 – Present</div>
-          <div class="timeline-desc">Centralized placement data and streamlined institutional operations as core student-leadership liaison, organizing professional seminars and optimizing workflows for 5+ development initiatives.</div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-role">IT &amp; Technical Support Head — CVMU International Conference</div>
-          <div class="timeline-meta">2024</div>
-          <div class="timeline-desc">Directed live streaming infrastructure and hybrid Google Meet integrations, bridging communication gaps for 100+ global delegates with 100% uptime and zero disruptions.</div>
-        </div>
-        <div class="timeline-item" style="margin-bottom:0">
-          <div class="timeline-role">Social Media Account Handler — MBIT</div>
-          <div class="timeline-meta">2023 – Present</div>
-          <div class="timeline-desc">Curated targeted digital content across institutional platforms, expanding digital footprint of 10+ campus initiatives and driving measurable student engagement.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COMPETITIVE -->
-<section id="competitive">
-  <div class="section-inner">
-    <div class="section-label">Achievements</div>
-    <h2 class="section-title">Competitive Experience</h2>
-    <div class="hackathon-card fade-in">
-      <div class="hackathon-badge"><i class="fa fa-trophy"></i> Runners-Up</div>
-      <div class="hackathon-title">SAMARTHA Hackathon — 36 Hours</div>
-      <div class="hackathon-sub">MBU, Andhra Pradesh</div>
-      <ul>
-        <li>Architected a zero-trace military messaging application within 36 hours, eliminating 100% of leftover message blueprints to render unauthorized chat tracing impossible</li>
-        <li>Engineered multi-layered privacy protocols utilizing temporary identity codes and biometric heart-rate monitors, completely safeguarding communications against physical device theft vulnerabilities</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="section-inner">
-    <div class="section-label">My Background</div>
-    <h2 class="section-title">Education</h2>
-    <div class="glass-card fade-in">
-      <div class="edu-card">
-        <div class="edu-icon">🎓</div>
-        <div>
-          <div class="edu-degree">B. Tech. — Computer Engineering</div>
-          <div class="edu-uni">MBIT College of CVM University, Anand, Gujarat</div>
-          <div class="edu-meta">
-            <span class="edu-tag"><i class="fa fa-star"></i> 9.35 CGPA</span>
-            <span class="edu-tag"><i class="fa fa-calendar"></i> 2023 – 2027</span>
+      <div class="hero-photo-wrap">
+        <div class="photo-ring">
+          <div class="ring-decor r1"></div>
+          <div class="ring-decor r2"></div>
+          <div class="photo-inner">
+            <img src="profile.jpeg" alt="Dhruval Patel - Generative AI and Backend Developer">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <div class="section-label">Let's Connect</div>
-    <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-grid">
-      <a href="mailto:dvp2122005@gmail.com" class="contact-item fade-in" target="_blank">
-        <i class="fa fa-envelope"></i>
-        <span class="contact-label">Email</span>
-        <span class="contact-value">dvp2122005@gmail.com</span>
-      </a>
-      <a href="tel:+919409272605" class="contact-item fade-in" target="_blank">
-        <i class="fa fa-phone"></i>
-        <span class="contact-label">Phone</span>
-        <span class="contact-value">+91 9409272605</span>
-      </a>
-      <a href="https://www.linkedin.com/in/dhruval-patel-dev" class="contact-item fade-in" target="_blank">
-        <i class="fab fa-linkedin"></i>
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">dhruval-patel-dev</span>
-      </a>
-      <a href="https://github.com/DhruvalVP" class="contact-item fade-in" target="_blank">
-        <i class="fab fa-github"></i>
-        <span class="contact-label">GitHub</span>
-        <span class="contact-value">DhruvalVP</span>
-      </a>
-      <a href="https://www.youtube.com/@dhruvalcodes" class="contact-item fade-in" target="_blank">
-        <i class="fab fa-youtube"></i>
-        <span class="contact-label">YouTube</span>
-        <span class="contact-value">@dhruvalcodes</span>
-      </a>
-      <a href="https://maps.google.com/?q=Anand,Gujarat" class="contact-item fade-in" target="_blank">
-        <i class="fa fa-map-marker-alt"></i>
-        <span class="contact-label">Location</span>
-        <span class="contact-value">Anand, Gujarat, IN</span>
-      </a>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">Professional Summary</h2>
+      <div class="glass-card fade-in">
+        <p>
+          I'm a <strong>Generative AI</strong> and <strong>backend developer</strong>, with hands-on experience in building RAG-based systems, AI assistants, and Agentic AI workflows. Skilled in developing real-world AI applications using <strong>Python and FastAPI</strong>, with a focus on performance optimization and automation. I believe in crafting systems that are not just technically sound, but genuinely transformative.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="glass-card skill-category fade-in">
+          <h3><i class="fa fa-code" style="color:var(--orange);margin-right:0.5rem"></i> Programming Languages</h3>
+          <div class="skill-chips">
+            <span class="chip">Python</span>
+            <span class="chip">C#</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">C/C++</span>
+          </div>
+        </div>
+        <div class="glass-card skill-category fade-in">
+          <h3><i class="fa fa-brain" style="color:var(--orange);margin-right:0.5rem"></i> AI/ML & LLMs</h3>
+          <div class="skill-chips">
+            <span class="chip">Generative AI</span>
+            <span class="chip">Agentic AI</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Finetuning</span>
+            <span class="chip">Embeddings</span>
+            <span class="chip">MCP</span>
+          </div>
+        </div>
+        <div class="glass-card skill-category fade-in">
+          <h3><i class="fa fa-layer-group" style="color:var(--orange);margin-right:0.5rem"></i> Frameworks & Tools</h3>
+          <div class="skill-chips">
+            <span class="chip">LangChain</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">n8n</span>
+            <span class="chip">Ollama</span>
+            <span class="chip">OpenAI</span>
+            <span class="chip">Vosk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">What I've Built</div>
+      <h2 class="section-title">Technical Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-title">🎙️ Ultimate AI Voice Assistant</div>
+          <ul>
+            <li>Deployed a hybrid OpenAI/Ollama LLM architecture with Google &amp; Vosk speech recognition, cutting cloud latency to under 1s while securing 100% of offline data via JSON</li>
+            <li>Programmed hot-word detection and OS-level integrations to automate commands, eliminating 65% of manual OS navigation with up to 95% transcription accuracy</li>
+          </ul>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-title">💼 AI Powered Job Preparation Platform</div>
+          <ul>
+            <li>Engineered a Python/React.js/FastAPI career accelerator overhauling standard LMS architectures with AI assessments and personalized learning roadmaps</li>
+            <li>Automated skill evaluations achieving 90% accuracy in targeted skill improvement tracking</li>
+          </ul>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-title">📄 PDF Translator</div>
+          <ul>
+            <li>Developed a chunk-processing translation engine using ai4bharat/indictrans2-en-indic-1B model with structural parsing algorithms</li>
+            <li>Achieved 95% translation accuracy and 98% formatting accuracy, eliminating 100% of manual post-translation reformatting for large PDFs</li>
+          </ul>
+        </div>
+        <div class="project-card fade-in">
+          <div class="project-title">🧠 Smart Meeting Notes (SaaS Platform)</div>
+          <ul>
+            <li>Launched a GenAI SaaS platform translating live conversations into structured insights with automated summaries</li>
+            <li>Reduced post-meeting administrative overhead by 100% through real-time AI-powered transcription and action item extraction</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-label">What I've Done</div>
+      <h2 class="section-title">Experience &amp; Leadership</h2>
+      <div class="glass-card fade-in">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-role">Google Student Ambassador — MBIT</div>
+            <div class="timeline-meta">2025 – 2026</div>
+            <div class="timeline-desc">Led a Gemini orientation for 160+ students covering advanced features (Pro, Nano Banana 2, Veo), securing 1-year free subscriptions to drive campus-wide AI adoption.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-role">Training &amp; Placement Coordinator — MBIT</div>
+            <div class="timeline-meta">2025 – Present</div>
+            <div class="timeline-desc">Centralized placement data and streamlined institutional operations as core student-leadership liaison, organizing professional seminars and optimizing workflows for 5+ development initiatives.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-role">IT &amp; Technical Support Head — CVMU International Conference</div>
+            <div class="timeline-meta">2024</div>
+            <div class="timeline-desc">Directed live streaming infrastructure and hybrid Google Meet integrations, bridging communication gaps for 100+ global delegates with 100% uptime and zero disruptions.</div>
+          </div>
+          <div class="timeline-item" style="margin-bottom:0">
+            <div class="timeline-role">Social Media Account Handler — MBIT</div>
+            <div class="timeline-meta">2023 – Present</div>
+            <div class="timeline-desc">Curated targeted digital content across institutional platforms, expanding digital footprint of 10+ campus initiatives and driving measurable student engagement.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIVE -->
+  <section id="competitive">
+    <div class="section-inner">
+      <div class="section-label">Achievements</div>
+      <h2 class="section-title">Competitive Experience</h2>
+      <div class="hackathon-card fade-in">
+        <div class="hackathon-badge"><i class="fa fa-trophy"></i> Runners-Up</div>
+        <div class="hackathon-title">SAMARTHA Hackathon — 36 Hours</div>
+        <div class="hackathon-sub">MBU, Andhra Pradesh</div>
+        <ul>
+          <li>Architected a zero-trace military messaging application within 36 hours, eliminating 100% of leftover message blueprints to render unauthorized chat tracing impossible</li>
+          <li>Engineered multi-layered privacy protocols utilizing temporary identity codes and biometric heart-rate monitors, completely safeguarding communications against physical device theft vulnerabilities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <div class="section-label">My Background</div>
+      <h2 class="section-title">Education</h2>
+      <div class="glass-card fade-in">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <div class="edu-degree">B. Tech. — Computer Engineering</div>
+            <div class="edu-uni">MBIT College of CVM University, Anand, Gujarat</div>
+            <div class="edu-meta">
+              <span class="edu-tag"><i class="fa fa-star"></i> 9.35 CGPA</span>
+              <span class="edu-tag"><i class="fa fa-calendar"></i> 2023 – 2027</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label">Let's Connect</div>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <a href="mailto:dvp2122005@gmail.com" class="contact-item fade-in" target="_blank">
+          <i class="fa fa-envelope"></i>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">dvp2122005@gmail.com</span>
+        </a>
+        <a href="tel:+919409272605" class="contact-item fade-in" target="_blank">
+          <i class="fa fa-phone"></i>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 9409272605</span>
+        </a>
+        <a href="https://www.linkedin.com/in/dhruval-patel-dev" class="contact-item fade-in" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">dhruval-patel-dev</span>
+        </a>
+        <a href="https://github.com/DhruvalVP" class="contact-item fade-in" target="_blank">
+          <i class="fab fa-github"></i>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">DhruvalVP</span>
+        </a>
+        <a href="https://www.youtube.com/@dhruvalcodes" class="contact-item fade-in" target="_blank">
+          <i class="fab fa-youtube"></i>
+          <span class="contact-label">YouTube</span>
+          <span class="contact-value">@dhruvalcodes</span>
+        </a>
+        <a href="https://maps.google.com/?q=Anand,Gujarat" class="contact-item fade-in" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-map-marker-alt"></i>
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Anand, Gujarat, IN</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 <span>Dhruval Patel</span>. Crafted with precision &amp; passion.</p>
+  <p>© 2026 <span>Dhruval Patel</span>. Crafted with precision &amp; passion.</p>
 </footer>
 
 <script>
@@ -1066,12 +1115,6 @@ function animateGlow() {
   requestAnimationFrame(animateGlow);
 }
 animateGlow();
-
-// Download button
-//document.getElementById('downloadBtn').addEventListener('click', (e) => {
-//  e.preventDefault();
-//  alert('Resume download: Connect your resume PDF file to enable this feature.');
-//});
 </script>
 </body>
 </html>
