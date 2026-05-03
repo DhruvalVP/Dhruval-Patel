@@ -10,14 +10,14 @@
 <meta name="keywords" content="Dhruval Patel, Generative AI Developer, Backend Developer, Python Developer, FastAPI, RAG, Agentic AI, Anand, Gujarat, Portfolio">
 <meta name="author" content="Dhruval Patel">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://yourdomain.com"> <!-- Replace with your actual domain -->
+<link rel="canonical" href="https://yourdomain.com">
 
 <!-- Open Graph / LinkedIn / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yourdomain.com">
 <meta property="og:title" content="Dhruval Patel | Generative AI & Backend Developer">
 <meta property="og:description" content="Building intelligent systems bridging the gap between cutting-edge AI research and real-world impact.">
-<meta property="og:image" content="https://yourdomain.com/profile.jpeg"> <!-- Replace with absolute URL to your image -->
+<meta property="og:image" content="https://yourdomain.com/profile.jpeg">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -26,10 +26,7 @@
 <meta name="twitter:description" content="Building intelligent systems bridging the gap between cutting-edge AI research and real-world impact.">
 <meta name="twitter:image" content="https://yourdomain.com/profile.jpeg">
 
-<!-- Google Search Console -->
-<meta name="google-site-verification" content="8Cd2VdMe1FaVNoCWHyDPTicUoq5DFH4WGgYWHohElIs" />
-
-<!-- Structured Data (JSON-LD) for Rich Results -->
+<!-- Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -90,7 +87,6 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -112,7 +108,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: -1;
-  pointer-events: none; /* Prevents blocking of scroll events */
+  pointer-events: none;
 }
 
 .fallback-bg {
@@ -155,9 +151,7 @@ body {
   transition: opacity var(--transition);
 }
 
-[data-theme="light"] .cursor-glow {
-  opacity: 0.3;
-}
+[data-theme="light"] .cursor-glow { opacity: 0.3; }
 
 @keyframes float {
   0%, 100% { transform: translateY(0) scale(1); }
@@ -186,9 +180,7 @@ nav {
 }
 .nav-logo span { color: var(--orange); }
 
-.nav-links {
-  display: flex; gap: 2rem; list-style: none;
-}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
 .nav-links a {
   color: var(--text-muted);
   text-decoration: none;
@@ -264,7 +256,6 @@ nav {
 }
 .hero-name .accent { color: var(--orange); }
 
-/* Updated Hero Title Highlight */
 .hero-title {
   font-size: 1.25rem;
   color: var(--text);
@@ -417,13 +408,61 @@ section { padding: 5rem 2rem; }
   transform: translateY(-2px);
 }
 
-/* ABOUT */
+/* ABOUT SECTION - UPDATED FOR VIDEO */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
 #about .glass-card p {
   font-size: 1.1rem;
   line-height: 1.85;
   color: var(--text-muted);
 }
 #about .glass-card p strong { color: var(--orange); font-weight: 500; }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.video-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.video-title i { color: var(--orange); font-size: 1.2rem; }
+
+.video-frame-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--orange-border);
+  background: var(--bg2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all var(--transition);
+}
+
+.video-frame-wrap:hover {
+  border-color: var(--orange);
+  box-shadow: 0 0 30px var(--orange-dim);
+}
+
+.video-frame-wrap iframe {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  border: none;
+}
 
 /* SKILLS */
 .skills-grid {
@@ -592,9 +631,7 @@ section { padding: 5rem 2rem; }
 }
 
 /* EDUCATION */
-.edu-card {
-  display: flex; align-items: flex-start; gap: 2rem;
-}
+.edu-card { display: flex; align-items: flex-start; gap: 2rem; }
 .edu-icon {
   width: 60px; height: 60px;
   border-radius: 14px;
@@ -647,20 +684,13 @@ section { padding: 5rem 2rem; }
   transform: translateY(-4px);
   background: var(--surface-hover);
 }
-.contact-item i {
-  font-size: 1.6rem;
-  transition: all var(--transition);
-}
+.contact-item i { font-size: 1.6rem; transition: all var(--transition); }
 .contact-item:hover i { text-shadow: 0 0 16px var(--orange); }
 .contact-label {
   font-size: 0.8rem; font-weight: 600;
   letter-spacing: 0.05em; text-transform: uppercase;
 }
-.contact-value {
-  font-size: 0.85rem;
-  text-align: center;
-  word-break: break-all;
-}
+.contact-value { font-size: 0.85rem; text-align: center; word-break: break-all; }
 
 /* FOOTER */
 footer {
@@ -701,6 +731,10 @@ footer span { color: var(--orange); }
 }
 
 /* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     position: absolute; top: 100%; left: 0; width: 100%;
@@ -737,7 +771,6 @@ footer span { color: var(--orange); }
 </head>
 <body>
 
-<!-- GLOBAL BACKGROUND WITH BACKLIGHT -->
 <div class="global-bg">
   <div class="fallback-bg">
     <div class="grid-bg"></div>
@@ -749,7 +782,6 @@ footer span { color: var(--orange); }
 </div>
 
 <header>
-  <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">DP<span>.</span></a>
     <ul class="nav-links" id="navLinks">
@@ -807,15 +839,35 @@ footer span { color: var(--orange); }
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT WITH VIDEO -->
   <section id="about">
     <div class="section-inner">
       <div class="section-label">Who I Am</div>
       <h2 class="section-title">Professional Summary</h2>
-      <div class="glass-card fade-in">
-        <p>
-          I'm a <strong>Generative AI</strong> and <strong>backend developer</strong>, with hands-on experience in building RAG-based systems, AI assistants, and Agentic AI workflows. Skilled in developing real-world AI applications using <strong>Python and FastAPI</strong>, with a focus on performance optimization and automation. I believe in crafting systems that are not just technically sound, but genuinely transformative.
-        </p>
+      
+      <div class="about-grid">
+        <!-- Bio Text -->
+        <div class="glass-card fade-in">
+          <p>
+            I'm a <strong>Generative AI</strong> and <strong>backend developer</strong>, with hands-on experience in building RAG-based systems, AI assistants, and Agentic AI workflows. Skilled in developing real-world AI applications using <strong>Python and FastAPI</strong>, with a focus on performance optimization and automation. I believe in crafting systems that are not just technically sound, but genuinely transformative.
+          </p>
+        </div>
+
+        <!-- Introduction Video -->
+        <div class="video-container fade-in">
+          <h3 class="video-title">
+            <i class="fab fa-youtube"></i> Know Me Better: A Quick Intro!
+          </h3>
+          <div class="video-frame-wrap">
+            <!-- Note: Replace the ID 'dQw4w9WgXcQ' with your actual YouTube video ID -->
+            <iframe 
+              src="https://www.youtube.com/embed/Mm0N4g08AaM?si=N7qoqg8XYB1NyM92" 
+              title="Dhruval Patel Introduction Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1011,7 +1063,6 @@ footer span { color: var(--orange); }
   </section>
 </main>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 <span>Dhruval Patel</span>. Crafted with precision &amp; passion.</p>
 </footer>
@@ -1068,7 +1119,6 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// Close mobile nav when clicking a link
 navLinksItems.forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('active');
